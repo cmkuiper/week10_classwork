@@ -5,6 +5,8 @@
   &__container {
     background-color: $grey;
     padding: $spacer-m;
+    display: flex;
+    flex-direction: column;
     visibility: hidden;
     opacity: 0;
   }
