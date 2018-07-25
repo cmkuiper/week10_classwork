@@ -20,5 +20,6 @@
 
   &--disabled {
     @include button($grey, $white);
+    cursor: not-allowed;
   }
 }

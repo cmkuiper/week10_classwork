@@ -25,9 +25,28 @@
     <main class="main">
       <h1>Here we go!</h1>
       <button class="button--secondary">Button</button>
+
+      <form class="form" id="form">
+        <label for="name" class="input__label">Name</label>
+        <input type="text" name="name" id="name" placeholder="Your Name"  class="input" required />
+        <label for="email" class="input__label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Your Email"  class="input" required />
+        <label for="phone" class="input__label">Phone</label>
+        <input type="tel" name="phone" id="phone" placeholder="Your Phone Number"  class="input" required />
+        <label for="method"  class="input__label">Contact Method</label>
+        <select name="method" id="method" required>
+          <option value="phone">Phone</option>
+          <option value="phone">Email</option>
+          <option value="phone">Text</option>
+        </select>
+        <label class="input__label" for="message">Message</label>
+        <textarea name="message" id="message" class="input" rows="10" required></textarea>
+        <input class="button--secondary" value="Cancel" type="reset" id="reset" />
+        <!-- Submit Disabled on Javascript--> 
+        <input class="button--primary" value="Submit" type="submit" id="submit"/>
+      </form>
+
     </main>
-    <footer>
-      &copy;copyright Createlyn
-    </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
